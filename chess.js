@@ -32,11 +32,10 @@ for(var i=0; i<10; i++) {
 
             if(i == 1 || i == 8) {
                 td.innerHTML = figures[j];
-                td.style.color = i == 1 ? "#000" : "#FFF";
             } else if(i == 2 || i == 7) {
                 td.innerHTML = figures[0];
-                td.style.color = i == 2 ? "#000" : "#FFF";
             }
+            td.style.color = (i == 1 || i == 2) ? "#000" : "#FFF";
         }
 
         tr.append(td);
